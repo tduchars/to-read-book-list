@@ -94,6 +94,12 @@ ul {
   grid-column: span 2;
 }
 
+.submit-book:hover {
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
 .empty-prompt {
   color: white;
   margin: auto;
