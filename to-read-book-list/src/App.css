@@ -1,0 +1,101 @@
+:root {
+  --main-green: #41b3a3;
+  --primary-red: white;
+  --secondary-blue: #85dcb0;
+}
+
+.App-header {
+  background-color: var(--main-green);
+  min-height: 8vh;
+  font-size: 0.8em;
+  color: var(--primary-red);
+  text-align: center;
+  border-bottom: double var(--primary-red);
+}
+
+body {
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: 1.2em;
+  color: var(--primary-red);
+  background: var(--main-green);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.book-shelf {
+  margin: auto;
+  padding-top: 10px;
+  max-width: 400px;
+}
+
+.books {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin: 20px;
+  background: var(--secondary-blue);
+  border-radius: 8px;
+}
+
+.delete-button {
+  grid-column: 2;
+  background: 0%;
+  font-size: 1.4em;
+  border: none;
+}
+
+.delete-button:hover {
+  color: #e27d60;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.add-book-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.add-book-input {
+  margin: auto;
+  grid-row: 1;
+  grid-column: 1;
+  background: var(--secondary-blue);
+  border: 0px;
+  border-radius: 9999px;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+}
+
+.add-author-input {
+  margin: auto;
+  grid-row: 1;
+  grid-column: 2;
+  background: var(--secondary-blue);
+  border: 0px;
+  border-radius: 9999px;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+}
+
+.submit-book {
+  margin: auto;
+  background: var(--secondary-blue);
+  border: 0px;
+  padding: 15px;
+  border-radius: 9999px;
+  max-height: 30px;
+  grid-row: 2;
+  grid-column: span 2;
+}
+
+.empty-prompt {
+  color: white;
+  margin: auto;
+  text-align: center;
+}
